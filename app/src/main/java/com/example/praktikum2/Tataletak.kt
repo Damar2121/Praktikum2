@@ -6,7 +6,6 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.core.provider.FontsContractCompat.Columns
@@ -26,10 +25,8 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-
-
-
-
+import androidx.compose.foundation.content.MediaType.Companion.Text
+import androidx.compose.material3.Text
 
 
 @Composable
@@ -148,18 +145,23 @@ fun TataletakBoxColoumnRow(modifier: Modifier) {
         ) {
             Image(painter = gambar,
                 contentDescription = null,
-                contentScale = ContentScale.Fit)
-            Text(text = "My music",
-                fontsize = 50.sp,
+                contentScale = ContentScale.Fit
+            )
+            Text(
+                text = "My music",
+                fontSize = 50.sp,
                 color = Color.Red,
-                fontweight = FontWeight.Bold,
-            fontFamily = FontFamily.Cursive,
-            modifier = Modifier.align(
-                alignment = Alignment.Center))
-
+                fontWeight = FontWeight.Bold,
+                fontFamily = FontFamily.Cursive,
+                modifier = Modifier.align(
+                alignment = Alignment.Center
+                )
+            )
         }
     }
 }
+
+
 
 
 
