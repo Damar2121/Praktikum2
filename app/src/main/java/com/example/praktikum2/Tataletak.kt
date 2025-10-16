@@ -13,8 +13,7 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.Box
-
-
+import androidx.compose.ui.Alignment
 
 
 @Composable
@@ -43,7 +42,7 @@ fun TataletakBox(modifier: Modifier) {
     Box(
         modifier = modifier
             .fillMaxHeight()
-            .fillMaxWidth(), contentAllignment = Allignment.Center
+            .fillMaxWidth(), contentAlignment = Alignment.Center
     ) {
         Text(text = "Box1")
         Text(text = "Coloumn 1")
